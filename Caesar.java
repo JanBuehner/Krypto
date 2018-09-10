@@ -29,7 +29,7 @@ public class Caesar
         return codiert;
     }
     
-    public String decodieren(String pEingabe, int pSchluessel)
+    public void decodieren(String pEingabe, int pSchluessel)
     {
         String eingabe = pEingabe.toUpperCase();
         String decodiert = "";
@@ -49,7 +49,6 @@ public class Caesar
                 decodiert = decodiert + (char) aktBuchstabe;
             }
         }
-        return decodiert;
     }
     
     public void brutalForce(String pEingabe)
